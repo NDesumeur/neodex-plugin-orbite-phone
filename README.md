@@ -1,0 +1,54 @@
+# Orbite
+
+Un jeu d'adresse à une touche : ton vaisseau tourne tout seul autour d'un soleil, sur l'une de trois orbites. Tu choisis seulement l'orbite, pour éviter les astéroïdes, ramasser les cristaux et fuir les éruptions du soleil.
+
+*English version: [README.en.md](README.en.md)*
+
+## Version téléphone
+
+On joue d'un doigt : touche l'écran plus loin du soleil que ton vaisseau pour sauter sur l'orbite du dehors, plus près pour celle du dedans. Sous le jeu, trois gros boutons : ◀ FREIN et TURBO ▶ se maintiennent (comme les flèches au clavier), TIR tire une fois quand le canon est chargé. NOUVELLE PARTIE, PAUSE et PLEIN ÉCRAN sont juste en dessous, et la partie se met en pause toute seule quand tu quittes l'appli.
+
+## Systèmes stellaires, turbo, canon et bonus (nouveau en 1.2.0)
+
+- Toutes les 40 secondes, un **nouveau système** : soleil jaune, naine rouge, pulsar, géante bleue. Les orbites s'étirent en **ellipses**, et certaines tournent lentement.
+- **→** (maintenu) : **turbo**, il use l'énergie (la jauge en bas) mais les points comptent double. **←** : **frein**.
+- Des **bonus** sur les orbites : **bouclier** (un choc), **aimant** (les cristaux viennent à toi), **ralenti** (les astéroïdes traînent) et **canon** : 5 tirs avec **X**, 5 points par astéroïde détruit.
+
+## Commandes
+
+- **Espace**, **clic** ou **↑** : passer à l'orbite extérieure suivante (depuis la plus éloignée, on revient à la plus proche du soleil).
+- **↓** ou **clic droit** : passer à l'orbite intérieure.
+- **→** maintenu : turbo · **←** maintenu : frein.
+- **X** ou **Maj** : tirer (avec le bonus canon).
+- **P** : pause.
+- **Espace** ou **clic** : partir, puis rejouer après une collision.
+
+## Plein écran
+
+Le bouton **Plein écran** agrandit le système solaire à tout l'écran (Échap pour en sortir). Hors plein écran, le jeu prend toute la hauteur que laisse la fenêtre.
+
+## Les dangers
+
+- **Astéroïdes** : de trois tailles, ils entrent par un bord de l'écran et traversent en visant près du soleil. Ils arrivent de plus en plus souvent. Un seul contact et la partie est finie.
+- **Éruptions** : toutes les 15 à 25 secondes, le soleil clignote et l'orbite intérieure rougit pendant 2 secondes ; ensuite elle brûle pendant 2 secondes. Il faut l'avoir quittée à temps.
+- La vitesse du vaisseau augmente avec le temps, jusqu'à plus du double de celle du départ.
+
+## Cristaux et score
+
+Trois cristaux sont toujours répartis sur les orbites ; chaque cristal ramassé est remplacé par un autre. Les cristaux pris à la suite font monter le multiplicateur, jusqu'à ×5 ; il retombe à ×1 toutes les 10 secondes.
+
+Le score vaut 2 points par seconde de survie, plus 10 points par cristal multipliés par le multiplicateur du moment.
+
+## Statistiques
+
+Meilleur score, parties jouées, cristaux ramassés au total et éruptions évitées.
+
+## Données et synchronisation
+
+Ton record et tes statistiques sont enregistrés par NeoDex, sauvegardés et synchronisés entre tes PC si la synchro est activée.
+
+## Installer
+
+Dans NeoDex : **NeoStore → À découvrir → Orbite → Installer**.
+
+Développer un plugin : voir le [SDK NeoDex](https://github.com/NDesumeur/neodex-sdk).
